@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.card {
+  display: grid;
+  grid-template-columns: 275px;
+  gap: 12px;
+}
+.card__header {
+  box-shadow: 0 4px 10px 0 rgba(81, 74, 126, 0.2);
+  cursor: pointer;
+}
+.card__main {
+  display: grid;
+  grid-template-columns: 150px 55px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.card__main_column {
+  display: flex;
+  gap: 12px;
+}
+.card__main_column:first-child {
+  flex-direction: column;
+}
+.card__main_column:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__main_prices {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.card__main_price {
+  font-size: 14px;
+  font-weight: 400;
+  color: #121212;
+}
+.card__main_stock {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7D7D7D;
+  text-decoration: line-through;
+}
+.card__main_name {
+  color: #7D7D7D;
+  font-weight: 400;
+  font-size: 12px;
+}
+.card__footer {
+  display: grid;
+  grid-template-columns: 150px 55px;
+  justify-content: space-between;
+}
+.card__button {
+  border: 1px solid #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100%;
+  padding: 14px 0;
+  transition: 0.5s ease-in-out;
+}
+.card__button:hover {
+  background-color: #514A7E;
+  color: #fff;
+}
+
+.stars {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*# sourceMappingURL=CardSlider.module.css.map */

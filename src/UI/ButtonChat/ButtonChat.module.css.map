@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"ButtonChat.module.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/fonts.scss","ButtonChat.module.scss","../../scss/colors.scss"],"names":[],"mappings":"AAAQ;ACGR;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA,kBCXO;EDYP;;AAEA;EACE","file":"ButtonChat.module.css"}

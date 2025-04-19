@@ -1,0 +1,47 @@
+@use "../../scss/fonts" as *;
+@use "../../scss/colors" as *;
+@use "../../scss/mixins" as *;
+
+
+.container {
+  @include container(1190px);
+  position: relative;
+}
+
+.stock {
+  margin-top: 80px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    position: relative;
+  }
+
+  &__title {
+    font-size: $fz_40;
+    font-weight: $fw_300;
+    position: relative;
+    display: inline-block;
+
+    &:after {
+      content: "Акции!";
+      color: $violet;
+      font-family: "Bad Script", sans-serif;
+      transform: translate(15px, 15px);
+      position: absolute;
+    }
+  }
+
+  &__slider {
+    width: auto;
+    overflow: visible;
+    margin-right: calc(-50vw + 1190px/2);
+  }
+
+  &__list {
+    display: flex;
+    gap: 80px;
+    overflow-x: auto;
+  }
+}

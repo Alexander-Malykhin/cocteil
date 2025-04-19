@@ -1,0 +1,90 @@
+@use "../../scss/fonts" as *;
+@use "../../scss/colors" as *;
+
+.card {
+  display: grid;
+  grid-template-columns: 275px;
+  gap: 12px;
+
+  &__header {
+    box-shadow: 0 4px 10px 0 rgba(81, 74, 126, 0.2);
+    cursor: pointer;
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: 150px 55px;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    &_column {
+      display: flex;
+      gap: 12px;
+
+      &:first-child {
+        flex-direction: column;
+      }
+
+      &:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+      }
+    }
+
+    &_prices {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    &_price {
+      font-size: $fz_14;
+      font-weight: $fw_400;
+      color: $black;
+    }
+
+    &_stock {
+      font-size: $fz_14;
+      font-weight: $fw_400;
+      color: $gray;
+      text-decoration: line-through;
+    }
+
+    &_name {
+      color: $gray;
+      font-weight: $fw_400;
+      font-size: $fz_12;
+    }
+  }
+
+  &__footer {
+    display: grid;
+    grid-template-columns: 150px 55px;
+    justify-content: space-between;
+  }
+
+  &__button {
+    border: 1px solid $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $fz_14;
+    font-weight: $fw_400;
+    height: 100%;
+    padding: 14px 0;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background-color: $violet;
+      color: $white;
+    }
+  }
+}
+
+.stars {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

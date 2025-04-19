@@ -1,5 +1,5 @@
-@import "../../scss/colors";
-@import "../../scss/fonts";
+@use "../../scss/fonts" as *;
+@use "../../scss/colors" as *;
 
 .button {
   padding: 83px 77px 80px 37px;

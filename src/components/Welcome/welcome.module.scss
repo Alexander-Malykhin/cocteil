@@ -1,6 +1,6 @@
-@import "../../scss/mixins";
-@import "../../scss/colors";
-@import "../../scss/fonts";
+@use "../../scss/fonts" as fonts;
+@use "../../scss/colors" as *;
+@use "../../scss/mixins" as *;
 
 .welcome {
   margin-top: 60px;
@@ -40,15 +40,15 @@
 
   &__title {
     grid-area: title;
-    font-size: $fz_60;
-    font-weight: $fw_300;
+    font-size: fonts.$fz_60;
+    font-weight: fonts.$fw_300;
     color: $black;
     line-height: 1;
   }
 
   &__accent {
     font-family: "Bad Script", serif;
-    font-weight: $fw_400;
+    font-weight: fonts.$fw_400;
     color: $violet;
   }
 
@@ -63,8 +63,8 @@
   &__text {
     grid-area: welcome_text;
     max-width: 250px;
-    font-weight: $fw_300;
-    font-size: $fz_16;
+    font-weight: fonts.$fw_300;
+    font-size: fonts.$fz_16;
     color: $gray;
   }
 

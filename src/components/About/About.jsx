@@ -5,6 +5,8 @@ import styles from './About.module.scss'
 import AboutCard from "../AboutCard/AboutCard.jsx";
 //SETTINGS
 import {aboutArray} from "../AboutCard/aboutArray.js";
+import ButtonUp from "../../UI/ButtonUp/ButtonUp.jsx";
+import ButtonChat from "../../UI/ButtonChat/ButtonChat.jsx";
 
 const About = () => {
 
@@ -23,7 +25,7 @@ const About = () => {
                                     <div className={styles.about__circles_row} key={item.id}>
                                         {item.first.map((card) => (
                                             <AboutCard card={card} key={card.id}/>
-                                            ))}
+                                        ))}
                                     </div>
                                 )
                             }
@@ -32,13 +34,16 @@ const About = () => {
                                 <div className={styles.about__circles_row} key={item.id}>
                                     {item.last.map((card) => (
                                         <AboutCard card={card} key={card.id}/>
-                                        ))}
+                                    ))}
                                 </div>
                             )
                         })}
                     </div>
 
-
+                   <div className={styles.about__circles}>
+                       <ButtonUp/>
+                       <ButtonChat/>
+                   </div>
                 </div>
             </div>
         </section>

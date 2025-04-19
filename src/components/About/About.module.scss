@@ -1,6 +1,7 @@
-@import "../../scss/colors";
-@import "../../scss/fonts";
-@import "../../scss/mixins";
+@use "../../scss/fonts" as fonts;
+@use "../../scss/colors" as *;
+@use "../../scss/mixins" as *;
+
 
 .container {
   @include container(1190px);
@@ -25,15 +26,15 @@
   }
 
   &__title {
-    font-size: $fz_40;
-    font-weight: $fw_300;
+    font-size: fonts.$fz_40;
+    font-weight:  fonts.$fw_300;
   }
 
   &__circles {
     display: flex;
     flex-direction: column;
     gap: 100px;
-
+    position: relative;
 
     &_row {
       display: grid;
@@ -55,6 +56,14 @@
           grid-column: 5 / span 1;
         }
       }
+    }
+
+    &:last-child {
+      transform: translate(0,-100px);
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
     }
   }
 }

@@ -1,3 +1,17 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px 0 rgba(18, 18, 18, 0.4);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #514A7E;
+  transition: 0.5s ease-in-out;
+}
+.button:hover {
+  transform: translateY(-10px);
+}
 
 /*# sourceMappingURL=ButtonUp.module.css.map */
