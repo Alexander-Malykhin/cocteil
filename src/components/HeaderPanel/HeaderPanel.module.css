@@ -1,0 +1,11 @@
+.panel {
+  grid-area: panel;
+  display: flex;
+  justify-content: space-between;
+}
+.panel__image {
+  width: 20px;
+  height: 20px;
+}
+
+/*# sourceMappingURL=HeaderPanel.module.css.map */

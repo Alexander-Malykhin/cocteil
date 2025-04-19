@@ -1,0 +1,18 @@
+@import "../../scss/mixins";
+
+.header {
+  margin-top: 50px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: max-content 1fr 350px 40px 90px;
+    grid-template-areas: "burger . search . panel";
+    grid-template-rows: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.container {
+  @include container(1190px);
+}

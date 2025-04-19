@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.button {
+  padding: 83px 77px 80px 37px;
+  border-radius: 100%;
+  border: 1px solid #514A7E;
+  width: 193px;
+  height: 193px;
+  background-color: #fff;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  font-size: 20px;
+  font-weight: 400;
+  color: #514A7E;
+  position: relative;
+}
+.button:after {
+  content: "";
+  background: url("../../assets/arrow-violet.png");
+  width: 80px;
+  height: 7px;
+  position: absolute;
+  transform: translate(-30px, 40px);
+  transition: background 0.5s ease;
+}
+.button:hover {
+  background-color: #514A7E;
+  box-shadow: 0 4px 50px 0 rgba(18, 18, 18, 0.6);
+  color: #fff;
+}
+.button:hover:after {
+  background: url("../../assets/arrow-white.png") no-repeat center/contain; /* Стрелка другого цвета */
+}
+
+/*# sourceMappingURL=button%D0%A1ircle.module.css.map */

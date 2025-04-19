@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.header {
+  margin-top: 50px;
+}
+.header__container {
+  display: grid;
+  grid-template-columns: max-content 1fr 350px 40px 90px;
+  grid-template-areas: "burger . search . panel";
+  grid-template-rows: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=header.module.css.map */

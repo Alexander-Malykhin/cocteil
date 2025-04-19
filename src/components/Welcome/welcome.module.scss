@@ -1,0 +1,82 @@
+@import "../../scss/mixins";
+@import "../../scss/colors";
+@import "../../scss/fonts";
+
+.welcome {
+  margin-top: 60px;
+
+  &__content {
+    display: grid;
+    grid-template-columns: minmax(320px, 540px) minmax(320px, 480px);
+    grid-template-rows: 420px 60px auto auto;
+    grid-template-areas: "welcome_first welcome_last"
+                          ".                        ."
+                          "welcome_text             ."
+                          "welcome_button welcome_button";
+    justify-content: space-between;
+  }
+
+  &__first {
+    grid-area: welcome_first;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 242px 114px;
+    grid-template-areas: "banner"
+                         "title";
+    gap: 60px;
+  }
+
+  &__banner {
+    grid-area: banner;
+    background-image: url("../../assets/welcome-last.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 10px 0  rgba($black, 0.4);
+    max-width: 278px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__title {
+    grid-area: title;
+    font-size: $fz_60;
+    font-weight: $fw_300;
+    color: $black;
+    line-height: 1;
+  }
+
+  &__accent {
+    font-family: "Bad Script", serif;
+    font-weight: $fw_400;
+    color: $violet;
+  }
+
+  &__last {
+    grid-area: welcome_last;
+    background-image: url("../../assets/welcome-first.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 10px 0  rgba($black, 0.4);
+  }
+
+  &__text {
+    grid-area: welcome_text;
+    max-width: 250px;
+    font-weight: $fw_300;
+    font-size: $fz_16;
+    color: $gray;
+  }
+
+  &__button {
+    grid-column: span 2;
+    grid-area: welcome_button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.container {
+  @include container(1190px);
+}

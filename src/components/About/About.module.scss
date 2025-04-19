@@ -1,0 +1,125 @@
+@import "../../scss/colors";
+@import "../../scss/fonts";
+@import "../../scss/mixins";
+
+.container {
+  @include container(1190px);
+}
+
+.about {
+  margin-top: 150px;
+  position: relative;
+
+  &:before {
+    content: url("../../assets/ellipse-right.png");
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0,-220px);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+  }
+
+  &__title {
+    font-size: $fz_40;
+    font-weight: $fw_300;
+  }
+
+  &__circles {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+
+    &_row {
+      display: grid;
+
+      &:first-child {
+        grid-template-columns: repeat(4, minmax(175px, 180px));
+        gap: 100px;
+      }
+
+      &:last-child {
+        grid-template-columns: repeat(5, minmax(175px, 185px));
+
+
+        & :first-child {
+          grid-column: 2 / span 1;
+        }
+
+        & :last-child {
+          grid-column: 5 / span 1;
+        }
+      }
+    }
+  }
+}
+
+.first {
+  &:first-child {
+
+    &::before {
+      position: absolute;
+      right: 40px;
+      top: 20px;
+      content: "";
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: $violet;
+      box-shadow: 0 4px 10px 0 rgba($black, 0.4);
+      bottom: 0;
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      position: absolute;
+      right: -30px;
+      top: -30px;
+      content: "";
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: $violet;
+      box-shadow: 0 4px 10px 0 rgba($black, 0.4);
+    }
+  }
+}
+
+.last {
+  &:first-child {
+
+    &::before {
+      position: absolute;
+      right: 0;
+      top: 20px;
+      content: "";
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: $violet;
+      box-shadow: 0 4px 10px 0 rgba($black, 0.4);
+      bottom: 0;
+    }
+  }
+
+  &:last-child {
+    &::before {
+      position: absolute;
+      right: -30px;
+      top: -30px;
+      content: "";
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: $violet;
+      box-shadow: 0 4px 10px 0 rgba($black, 0.4);
+    }
+  }
+}
+

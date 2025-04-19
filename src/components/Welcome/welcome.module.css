@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.welcome {
+  margin-top: 60px;
+}
+.welcome__content {
+  display: grid;
+  grid-template-columns: minmax(320px, 540px) minmax(320px, 480px);
+  grid-template-rows: 420px 60px auto auto;
+  grid-template-areas: "welcome_first welcome_last" ".                        ." "welcome_text             ." "welcome_button welcome_button";
+  justify-content: space-between;
+}
+.welcome__first {
+  grid-area: welcome_first;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 242px 114px;
+  grid-template-areas: "banner" "title";
+  gap: 60px;
+}
+.welcome__banner {
+  grid-area: banner;
+  background-image: url("../../assets/welcome-last.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 10px 0 rgba(18, 18, 18, 0.4);
+  max-width: 278px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.welcome__title {
+  grid-area: title;
+  font-size: 60px;
+  font-weight: 300;
+  color: #121212;
+  line-height: 1;
+}
+.welcome__accent {
+  font-family: "Bad Script", serif;
+  font-weight: 400;
+  color: #514A7E;
+}
+.welcome__last {
+  grid-area: welcome_last;
+  background-image: url("../../assets/welcome-first.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 10px 0 rgba(18, 18, 18, 0.4);
+}
+.welcome__text {
+  grid-area: welcome_text;
+  max-width: 250px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #7D7D7D;
+}
+.welcome__button {
+  grid-column: span 2;
+  grid-area: welcome_button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=welcome.module.css.map */

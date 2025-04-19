@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.search {
+  grid-area: search;
+  display: flex;
+  gap: 20px;
+}
+.search__image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.search__input {
+  width: 100%;
+  border-bottom: 0.5px solid #7D7D7D;
+  font-size: 12px;
+}
+.search__input::placeholder {
+  font-size: 12px;
+  font-weight: 250;
+  color: #7D7D7D;
+}
+
+/*# sourceMappingURL=search.module.css.map */

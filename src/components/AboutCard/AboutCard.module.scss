@@ -1,0 +1,9 @@
+@import "../../scss/colors";
+@import "../../scss/fonts";
+
+.item {
+  font-size: $fz_14;
+  font-weight: $fw_300;
+  color: $gray;
+  position: relative;
+}

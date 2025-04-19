@@ -1,0 +1,36 @@
+@import "../../scss/colors";
+@import "../../scss/fonts";
+
+.button {
+  padding: 83px 77px 80px 37px;
+  border-radius: 100%;
+  border: 1px solid $violet;
+  width: 193px;
+  height: 193px;
+  background-color: $white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  font-size: $fz_20;
+  font-weight: $fw_400;
+  color: $violet;
+  position: relative;
+
+  &:after {
+    content: '';
+    background: url("../../assets/arrow-violet.png");
+    width: 80px;
+    height: 7px;
+    position: absolute;
+    transform: translate(-30px,40px);
+    transition: background 0.5s ease;
+  }
+
+  &:hover {
+    background-color: $violet;
+    box-shadow: 0 4px 50px 0 rgba($black, 0.6);
+    color: $white;
+
+    &:after {
+      background: url("../../assets/arrow-white.png") no-repeat center / contain; /* Стрелка другого цвета */
+    }
+  }
+}

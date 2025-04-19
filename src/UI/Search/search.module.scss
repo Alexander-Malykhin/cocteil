@@ -1,0 +1,26 @@
+@import "../../scss/colors";
+@import "../../scss/fonts";
+
+.search {
+  grid-area: search;
+  display: flex;
+  gap: 20px;
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__input {
+    width: 100%;
+    border-bottom: 0.5px solid $gray;
+    font-size: $fz_12;
+
+    &::placeholder {
+      font-size: $fz_12;
+      font-weight: $fw_250;
+      color: $gray;
+    }
+  }
+}
