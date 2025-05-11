@@ -9,12 +9,12 @@
 }
 
 .stock {
-  margin-top: 80px;
+  margin-top: 5rem;
 
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 90px;
+    gap: 5.625rem;
     position: relative;
   }
 
@@ -25,10 +25,10 @@
     display: inline-block;
 
     &:after {
-      content: "Акции!";
+      content: "Акции";
       color: $violet;
       font-family: "Bad Script", sans-serif;
-      transform: translate(15px, 15px);
+      transform: translate(0.93rem, 0.93rem);
       position: absolute;
     }
   }
@@ -36,12 +36,12 @@
   &__slider {
     width: auto;
     overflow: visible;
-    margin-right: calc(-50vw + 1190px/2);
+    margin-right: calc(-50vw + 74.3rem / 2);
   }
 
   &__list {
     display: flex;
-    gap: 80px;
+    gap: 5rem;
     overflow-x: auto;
   }
 }

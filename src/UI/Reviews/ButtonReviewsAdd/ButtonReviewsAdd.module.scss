@@ -1,0 +1,19 @@
+@use "../../../scss/fonts" as *;
+@use "../../../scss/colors" as *;
+
+
+.button {
+  background-color: $violet;
+  padding: 14px 17px;
+  font-size: $fz_14;
+  font-weight: $fw_400;
+  color: $white;
+  transition: 0.5s ease-in-out;
+  border: 1px solid $violet;
+
+  &:hover {
+    color: $black;
+    background-color: white;
+    border: 1px solid $black;
+  }
+}

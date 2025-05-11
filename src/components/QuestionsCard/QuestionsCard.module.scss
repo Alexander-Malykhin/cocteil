@@ -1,0 +1,33 @@
+@use "../../scss/fonts" as *;
+@use "../../scss/colors" as *;
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: 1.125rem;
+  border-bottom: 1px solid $gray;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: $fz_20;
+    font-weight: $fw_400;
+  }
+
+  &__description {
+    display: none;
+    color: $gray;
+    font-size: $fz_12;
+  }
+}
+
+.active {
+  display: block;
+  height: auto;
+}

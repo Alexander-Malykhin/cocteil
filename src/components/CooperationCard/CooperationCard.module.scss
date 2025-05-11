@@ -1,0 +1,25 @@
+@use "../../scss/fonts" as *;
+@use "../../scss/colors" as *;
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.375rem;
+
+  &__title {
+    font-size: $fz_20;
+    font-weight: $fw_400;
+    color: $black;
+    max-width: 8.43rem;
+  }
+
+  &__text {
+    color: $gray;
+    font-size: $fz_12;
+    font-weight: $fw_300;
+  }
+}

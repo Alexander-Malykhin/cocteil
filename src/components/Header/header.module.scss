@@ -1,19 +1,20 @@
-;  @use "../../scss/mixins" as *;
+@use "../../scss/mixins" as *;
 
+.container {
+  @include container(74.3rem);
+  position: relative;
+}
 
 .header {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 
   &__container {
     display: grid;
-    grid-template-columns: max-content 1fr 350px 40px 90px;
+    grid-template-columns: max-content 1fr 21.875rem 2.5rem 5.625rem;
     grid-template-areas: "burger . search . panel";
-    grid-template-rows: 20px;
+    grid-template-rows: 1.25rem;
     justify-content: space-between;
     align-items: center;
   }
 }
 
-.container {
-  @include container(1190px);
-}

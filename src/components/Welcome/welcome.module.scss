@@ -2,13 +2,17 @@
 @use "../../scss/colors" as *;
 @use "../../scss/mixins" as *;
 
+.container {
+  @include container(74.3rem);
+}
+
 .welcome {
-  margin-top: 60px;
+  margin-top: 3.75rem;
 
   &__content {
     display: grid;
-    grid-template-columns: minmax(320px, 540px) minmax(320px, 480px);
-    grid-template-rows: 420px 60px auto auto;
+    grid-template-columns: minmax(20rem, 33.75rem) minmax(20rem, 30rem);
+    grid-template-rows: 26.25rem 3.75rem auto auto;
     grid-template-areas: "welcome_first welcome_last"
                           ".                        ."
                           "welcome_text             ."
@@ -20,10 +24,10 @@
     grid-area: welcome_first;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 242px 114px;
+    grid-template-rows: 15.12rem 7.125rem;
     grid-template-areas: "banner"
                          "title";
-    gap: 60px;
+    gap: 3.75rem;
   }
 
   &__banner {
@@ -31,8 +35,8 @@
     background-image: url("../../assets/welcome-last.png");
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 4px 10px 0  rgba($black, 0.4);
-    max-width: 278px;
+    box-shadow: 0 0.25rem 0.625rem 0 rgba($black, 0.4);
+    max-width: 17.37rem;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -49,6 +53,7 @@
   &__accent {
     font-family: "Bad Script", serif;
     font-weight: fonts.$fw_400;
+    font-size: fonts.$fz_60;
     color: $violet;
   }
 
@@ -57,12 +62,12 @@
     background-image: url("../../assets/welcome-first.png");
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0 4px 10px 0  rgba($black, 0.4);
+    box-shadow: 0 0.25rem 0.625rem 0 rgba($black, 0.4);
   }
 
   &__text {
     grid-area: welcome_text;
-    max-width: 250px;
+    max-width: 15.625rem;
     font-weight: fonts.$fw_300;
     font-size: fonts.$fz_16;
     color: $gray;
@@ -77,6 +82,3 @@
   }
 }
 
-.container {
-  @include container(1190px);
-}

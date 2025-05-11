@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 //STYLES
 import styles from './Stock.module.scss'
-import CardSlider from "../CardSlider/CardSlider.jsx";
+import Card from "../Card/Card.jsx";
 
 const Stock = () => {
 
@@ -38,11 +38,11 @@ const Stock = () => {
 
                     <div className={styles.stock__slider}>
                         <div className={styles.stock__list} ref={listRef}>
-                            <CardSlider />
-                            <CardSlider />
-                            <CardSlider />
-                            <CardSlider />
-                            <CardSlider />
+                            <Card />
+                            <Card />
+                            <Card />
+                            <Card />
+                            <Card />
                         </div>
                     </div>
                 </div>

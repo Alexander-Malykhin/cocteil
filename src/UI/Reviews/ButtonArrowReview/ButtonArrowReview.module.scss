@@ -1,0 +1,13 @@
+@use "../../../scss/fonts" as *;
+@use "../../../scss/colors" as *;
+
+
+.button {
+  border-radius: 50%;
+  border: 1px  solid $violet;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 92px;
+  height: 92px;
+}

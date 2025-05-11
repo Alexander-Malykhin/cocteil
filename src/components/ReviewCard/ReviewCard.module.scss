@@ -1,0 +1,49 @@
+@use "../../scss/fonts" as *;
+@use "../../scss/colors" as *;
+
+
+.card {
+  display: grid;
+  grid-template-columns: 94px minmax(120px, 260px);
+  align-items: center;
+  gap: 50px;
+  padding: 40px 30px;
+  background-color: $white;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+
+  &__image {
+    border-radius: 50%;
+    box-shadow: 0 4px 10px 0 rgba(81, 74, 126, 0.4);
+    width: 5.875rem;
+    height: 5.875rem;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &__text {
+    color: $gray;
+    font-size: $fz_12;
+    font-weight: $fw_300;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    font-size:  $fz_12;
+    font-weight: $fw_400;
+  }
+
+  &__date {
+    font-size:  $fz_12;
+    font-weight: $fw_400;
+    color: $violet;
+  }
+}

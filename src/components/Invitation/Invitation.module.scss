@@ -1,0 +1,53 @@
+@use "../../scss/fonts" as *;
+@use "../../scss/colors" as *;
+@use "../../scss/mixins" as *;
+
+.container {
+  @include container(74.3rem);
+}
+
+.invitation {
+  margin-top: 9.375rem;
+  position: relative;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 43.75rem;
+    align-items: flex-start;
+    padding: 1.25rem 2.5rem;
+    border: 1px solid $violet;
+  }
+
+  &__title {
+    font-size: $fz_20;
+    font-weight: $fw_400;
+  }
+
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.56rem;
+    max-width: 17.5rem;
+    width: 100%;
+  }
+}
+
+.button {
+  background-color: $violet;
+  padding: 0.875rem 1.56rem;
+  color: $white;
+  font-size: $fz_14;
+  font-weight: $fw_400;
+  box-shadow: 0 0.25rem 0.625rem 0 rgba(81, 74, 126, 0.4);
+  max-width: 9.25rem;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}

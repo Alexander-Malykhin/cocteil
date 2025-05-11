@@ -1,0 +1,16 @@
+@use "../../scss/fonts" as *;
+@use "../../scss/colors" as *;
+@use "../../scss/mixins" as *;
+
+
+.logo {
+  max-width: 5.25rem;
+  height: auto;
+
+  &__image {
+    display: inline-block;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+  }
+}

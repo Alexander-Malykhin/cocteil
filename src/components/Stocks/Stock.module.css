@@ -8,12 +8,12 @@
 }
 
 .stock {
-  margin-top: 80px;
+  margin-top: 5rem;
 }
 .stock__content {
   display: flex;
   flex-direction: column;
-  gap: 90px;
+  gap: 5.625rem;
   position: relative;
 }
 .stock__title {
@@ -23,20 +23,20 @@
   display: inline-block;
 }
 .stock__title:after {
-  content: "Акции!";
+  content: "Акции";
   color: #514A7E;
   font-family: "Bad Script", sans-serif;
-  transform: translate(15px, 15px);
+  transform: translate(0.93rem, 0.93rem);
   position: absolute;
 }
 .stock__slider {
   width: auto;
   overflow: visible;
-  margin-right: calc(-50vw + 595px);
+  margin-right: calc(-50vw + 37.15rem);
 }
 .stock__list {
   display: flex;
-  gap: 80px;
+  gap: 5rem;
   overflow-x: auto;
 }
 

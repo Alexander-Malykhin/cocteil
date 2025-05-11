@@ -1,0 +1,44 @@
+@use "../../scss/fonts" as *;
+@use "../../scss/colors" as *;
+@use "../../scss/mixins" as *;
+
+
+.container {
+  @include container(74.3rem);
+}
+
+
+.cooperation {
+  margin-top:  9.375rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4.375rem;
+  }
+
+  &__title {
+    font-size: $fz_40;
+    font-weight: $fw_300;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 3.875rem;
+  }
+
+  &__description {
+    font-size: $fz_16;
+    font-weight: $fw_300;
+    color: $gray;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(9.375rem, 13.75rem));
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

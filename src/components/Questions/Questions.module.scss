@@ -1,0 +1,48 @@
+@use "../../scss/fonts" as *;
+@use "../../scss/colors" as *;
+@use "../../scss/mixins" as *;
+
+
+.container {
+  @include container(74.3rem);
+}
+
+.questions {
+  margin-top: 9.375rem;
+  position: relative;
+
+  &:before {
+    content: url("../../assets/ellipse-right.png");
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0, -220px);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+  }
+
+  &__title {
+    font-size: $fz_40;
+    font-weight: $fw_300;
+    position: relative;
+    display: inline-block;
+
+    &:after {
+      content: "FAQ";
+      color: $violet;
+      font-family: "Bad Script", sans-serif;
+      transform: translate(0.93rem, 0.93rem);
+      position: absolute;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.56rem;
+  }
+}

@@ -1,14 +1,16 @@
 import React from 'react';
 //STYLES
-import styles from './CardSlider.module.scss'
+import styles from './Card.module.scss'
 //IMAGE
 import cardImage from "@assets/card.png"
-import basket from "@assets/bag.png"
-import favorite from '@assets/heart.png'
-import star from '@assets/starActive.png'
+//COMPONENTS
+import ButtonMore from "../../UI/Card/ButtonMore/ButtonMore.jsx";
+import ButtonCardBasket from "../../UI/Card/ButtonCardBasket/ButtonCardBasket.jsx";
+import ButtonCardFavorite from "../../UI/Card/ButtonCardFavorite/ButtonCardFavorite.jsx";
+import Stars from "../../UI/Stars/Stars.jsx";
 
 
-const CardSlider = () => {
+const Card = () => {
     return (
         <article className={styles.card}>
 
@@ -33,33 +35,22 @@ const CardSlider = () => {
                 </div>
 
                 <div className={styles.card__main_column}>
-                    <button>
-                        <img src={basket} alt="basket"/>
-                    </button>
-                    <button>
-                        <img src={favorite} alt="favorite"/>
-                    </button>
+                    <ButtonCardBasket/>
+                    <ButtonCardFavorite/>
                 </div>
             </div>
 
             <div className={styles.card__footer}>
                 <div className={styles.card__main_column}>
-                    <button className={styles.card__button}>
-                        Подробнее
-                    </button>
+                   <ButtonMore/>
                 </div>
 
                 <div className={styles.card__main_column}>
-                    <div className={styles.stars}>
-                        <img src={star} alt="star"/>
-                        <img src={star} alt="star"/>
-                        <img src={star} alt="star"/>
-                        <img src={star} alt="star"/>
-                    </div>
+                   <Stars star={4}/>
                 </div>
             </div>
         </article>
     );
 };
 
-export default CardSlider;
+export default Card;

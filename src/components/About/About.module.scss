@@ -4,11 +4,11 @@
 
 
 .container {
-  @include container(1190px);
+  @include container(74.3rem);
 }
 
 .about {
-  margin-top: 150px;
+  margin-top: 9.3rem;
   position: relative;
 
   &:before {
@@ -16,13 +16,13 @@
     position: absolute;
     right: 0;
     top: 0;
-    transform: translate(0,-220px);
+    transform: translate(0,-13.75rem);
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 95px;
+    gap: 5.93rem;
   }
 
   &__title {
@@ -40,12 +40,12 @@
       display: grid;
 
       &:first-child {
-        grid-template-columns: repeat(4, minmax(175px, 180px));
-        gap: 100px;
+        grid-template-columns: repeat(4, minmax(10.93rem, 11.25rem));
+        gap: 6.25rem;
       }
 
       &:last-child {
-        grid-template-columns: repeat(5, minmax(175px, 185px));
+        grid-template-columns: repeat(5, minmax(10.93rem, 11.55rem));
 
 
         & :first-child {
@@ -59,7 +59,7 @@
     }
 
     &:last-child {
-      transform: translate(0,-100px);
+      transform: translate(0,-6.25rem);
       display: flex;
       flex-direction: row;
       width: 100%;
@@ -73,14 +73,14 @@
 
     &::before {
       position: absolute;
-      right: 40px;
-      top: 20px;
+      right: 2.5rem;
+      top: 1.25rem;
       content: "";
-      width: 28px;
-      height: 28px;
+      width: 1.75rem;
+      height: 1.75rem;
       border-radius: 50%;
       background-color: $violet;
-      box-shadow: 0 4px 10px 0 rgba($black, 0.4);
+      box-shadow: 0 0.25rem 0.625rem 0 rgba($black, 0.4);
       bottom: 0;
     }
   }
@@ -88,14 +88,14 @@
   &:nth-child(3) {
     &::before {
       position: absolute;
-      right: -30px;
-      top: -30px;
+      right: -1.875rem;
+      top: -1.875rem;
       content: "";
-      width: 46px;
-      height: 46px;
+      width: 2.875rem;
+      height: 2.875rem;
       border-radius: 50%;
       background-color: $violet;
-      box-shadow: 0 4px 10px 0 rgba($black, 0.4);
+      box-shadow: 0 0.25rem 0.625rem 0 rgba($black, 0.4);
     }
   }
 }
@@ -106,13 +106,13 @@
     &::before {
       position: absolute;
       right: 0;
-      top: 20px;
+      top: 1.25rem;
       content: "";
-      width: 28px;
-      height: 28px;
+      width: 1.75rem;
+      height: 1.75rem;
       border-radius: 50%;
       background-color: $violet;
-      box-shadow: 0 4px 10px 0 rgba($black, 0.4);
+      box-shadow: 0 0.25rem 0.25rem 0 rgba($black, 0.4);
       bottom: 0;
     }
   }
@@ -120,14 +120,14 @@
   &:last-child {
     &::before {
       position: absolute;
-      right: -30px;
-      top: -30px;
+      right: -1.875rem;
+      top: -1.875rem;
       content: "";
-      width: 46px;
-      height: 46px;
+      width: 2.875rem;
+      height: 2.875rem;
       border-radius: 50%;
       background-color: $violet;
-      box-shadow: 0 4px 10px 0 rgba($black, 0.4);
+      box-shadow: 0 0.25rem 0.625rem 0 rgba($black, 0.4);
     }
   }
 }

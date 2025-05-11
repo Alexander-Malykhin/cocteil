@@ -1,0 +1,21 @@
+@use "../../scss/fonts" as *;
+@use "../../scss/colors" as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &__line {
+    background-color: $violet;
+    width: 14px;
+    height: 2px;
+
+    &:last-child {
+      position: absolute;
+      width: 2px;
+      height: 14px;
+    }
+  }
+}
